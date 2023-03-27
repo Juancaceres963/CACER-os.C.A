@@ -717,7 +717,7 @@ button {
 /* Pagina-blog (individual) */
 .pagina-blog img{
   width: 100%;
-  max-height: 600px;
+  max-height: 500px;
   object-fit: cover;
 }
 .texto-blog {
@@ -726,7 +726,29 @@ button {
 .ingredientes-receta {
   line-height: 2.4rem;
 }
+.pasos-receta {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .pasos-receta {
+    flex-wrap: wrap;
+    max-width: 350px;
+    margin: auto;
+  }
+}
+.pasos-receta .numero-pasos{
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+}
 .pasos-receta li {
+  background-color: var(--principal);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
   margin-bottom: 1.2rem;
 }
 /* Contacto */
