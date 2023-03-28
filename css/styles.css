@@ -40,7 +40,7 @@ a {
 }
 ul,
 li {
-  Padding: 0;
+  padding: 0;
   margin: 0;
   list-style: none;
 }
@@ -723,12 +723,52 @@ button {
 .texto-blog {
   margin: 30px 30px 0 30px;
 }
+.receta {
+  background-color: var(--principal);
+  padding: 50px;
+  border-radius: 15px;
+}
+ul.ingredientes-receta li {
+  list-style: circle;
+  margin-left: 20px;
+}
 .ingredientes-receta {
   line-height: 2.4rem;
 }
+h5.pasos {
+  margin-top: 20px;
+}
+.pasos, .igredientes{
+  margin: 0 auto 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+  width: 20%;
+  min-width: 180px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--terciario);
+}
+.igredientes{
+  width: 35%;
+  min-width: 280px;
+}
+.ingredientes-receta {
+  padding: 30px;
+  background-color: var(--secundario);
+  border-radius: 15px;
+}
+@media only screen and (max-width: 768px) {
+  ul.ingredientes-receta {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
 .pasos-receta {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 30px;
 }
 @media only screen and (max-width: 768px) {
@@ -743,13 +783,15 @@ button {
   font-family: "Poppins", sans-serif;
 }
 .pasos-receta li {
-  background-color: var(--principal);
+  background-color: var(--secundario);
   border-radius: 15px;
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   padding: 20px;
   text-align: center;
-  margin-bottom: 1.2rem;
+}
+ul.pasos-receta {
+  padding: 0;
 }
 /* Contacto */
 .contenedor-form {
