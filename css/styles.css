@@ -116,6 +116,11 @@ button {
 .precio span {
   color: var(--terciarioLetras);
 }
+.borde {
+  padding: 30px;
+  border: 3px dashed white;
+  border-radius: 15px;
+}
 /* Boton Hamburguesa */
 .hamburguesa #menu_on {
   display: none;
@@ -725,8 +730,13 @@ button {
 }
 .receta {
   background-color: var(--principal);
-  padding: 50px;
+  padding: 25px;
   border-radius: 15px;
+}
+div.borde {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 ul.ingredientes-receta li {
   list-style: circle;
@@ -764,17 +774,17 @@ h5.pasos {
     display: flex;
     flex-direction: column;
   }
-
 }
 .pasos-receta {
   display: flex;
   justify-content: space-evenly;
   gap: 30px;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 768px) {
   .pasos-receta {
     flex-wrap: wrap;
-    max-width: 350px;
+    max-width: 300px;
     margin: auto;
   }
 }
@@ -792,6 +802,7 @@ h5.pasos {
 }
 ul.pasos-receta {
   padding: 0;
+  margin: 0;
 }
 /* Contacto */
 .contenedor-form {
