@@ -118,7 +118,7 @@ button {
 }
 .borde {
   padding: 30px;
-  border: 3px dashed white;
+  border: 3px dashed var(--terciario);
   border-radius: 15px;
 }
 /* Boton Hamburguesa */
@@ -729,9 +729,18 @@ button {
   margin: 30px 30px 0 30px;
 }
 .receta {
-  background-color: var(--principal);
-  padding: 25px;
+  background:linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05)
+   ),   url(https://res.cloudinary.com/dahz5phaf/image/upload/v1680110354/patron-cpcina_fnxko7.jpg);
+  background-size: cover;
+  background-repeat: repeat-x;
   border-radius: 15px;
+  padding: 20px;
+  /* filter: brightness(.95); */
+  /* background-color: var(--principal);
+  padding: 25px; */
 }
 div.borde {
   display: flex;
@@ -789,8 +798,13 @@ h5.pasos {
   }
 }
 .pasos-receta .numero-pasos{
+  width: 40%;
+  margin: 0 auto 15px auto;
   font-size: 4rem;
   font-family: "Poppins", sans-serif;
+  color: var(--terciarioLetras);
+  border-radius: 50%;
+  border: 5px solid var(--terciarioLetras);
 }
 .pasos-receta li {
   background-color: var(--secundario);
