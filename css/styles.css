@@ -699,7 +699,7 @@ button {
 .entrada-blog .texto-entrada p:nth-child(2) {
   margin-bottom: .4rem;
 }
-.texto-entrada span {
+.texto-entrada span ,.texto-entrada span2{
   color: var(--terciarioLetras);
 }
 @media only screen and (max-width: 768px){
@@ -759,6 +759,7 @@ ul.ingredientes-receta li {
 }
 .ingredientes-receta {
   line-height: 2.4rem;
+  width: 100%;
 }
 h5.pasos {
   margin-top: 20px;
@@ -777,7 +778,7 @@ h5.pasos {
 }
 .igredientes{
   width: 35%;
-  min-width: 280px;
+  min-width: 220px;
 }
 .ingredientes-receta {
   padding: 30px;
@@ -819,6 +820,8 @@ h5.pasos {
   max-width: 300px;
   padding: 20px;
   text-align: center;
+  height: 100%;
+  margin: auto;
 }
 ul.pasos-receta {
   padding: 0;

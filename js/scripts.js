@@ -4,6 +4,7 @@ $(document).ready(function(){
         $('body').toggleClass('visible_menu'); // Añadimos o eliminamos la clase 'visible_menu' al body
       return false;
       })
+      
   // Productos 
   function filterProducts() {
     // Obtener el término de búsqueda
