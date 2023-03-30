@@ -528,6 +528,19 @@ button {
 .texto h3 {
     color: #ffffff;
 }
+.texto p span {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--terciarioLetras);
+}
+.metodos-de-pago {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+}
+.metodos-de-pago img {
+  width: 80px;
+}
 .copyrigth{
     display: flex;
     justify-content: center;
