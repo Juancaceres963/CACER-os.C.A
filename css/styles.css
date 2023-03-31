@@ -332,6 +332,7 @@ button {
   font-size: 2.3rem;
   text-align: center;
   color: #ffffff;
+  font-weight: 600;
 }
 @media only screen and (max-width: 768px) {
   .frutos-secos h2 {
@@ -385,7 +386,7 @@ button {
 }
 .publicidad {
   position: relative;
-  height: 400px;
+  height: 300px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -394,7 +395,7 @@ button {
 }
 .publicidad::before {
   content: "";
-  background-image: url(https://www.runtastic.com/blog/wp-content/uploads/2021/05/rfto_blog_streak-running_thumbnail_1200x800-1024x683.jpg.webp);
+  background-image: url(https://img.freepik.com/fotos-premium/grupo-hombres-mujeres-mayores-que-participan-entrenamiento-maraton-estirando-piernas-justo-antes-correr-parque_236854-27202.jpg?w=2000);
 }
 .contenido-publicidad {
   position: relative;
@@ -406,14 +407,9 @@ button {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  font-weight: 600;
   font-size: 2.3rem;
   transition: all .3s ease;
-}
-.contenido-publicidad h2:hover{
-    padding: 30px;
-    font-size: 2.6rem;
-    font-weight: 600;
-    transition: all .3s ease;
 }
 @media only screen and (max-width: 768px){
     .publicidad{
@@ -421,9 +417,6 @@ button {
     }
     .contenido-publicidad h2{
         font-size: 1.5rem;
-    }
-    .contenido-publicidad h2:hover{
-        font-size: 1.8rem;
     }
   }
 /* Testimoniales */
@@ -465,6 +458,9 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+.info-testimonial img {
+  object-fit: cover;
 }
 /* Footer */
 .footer-principal {
