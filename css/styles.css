@@ -339,6 +339,42 @@ button {
     font-size: 1.5rem;
   }
 }
+/* Informacion Sobre el Yogurt */
+.informacion-yogurt {
+  font-size: 1.2rem;
+  color: var(--secundarioLetras);
+  text-align: center;
+}
+.contenedor.info-yogurt {
+  padding: 0 50px;
+}
+.bacterias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.bacterias img {
+  max-width: 500px;
+}
+@media only screen and (max-width: 780px){
+  .bacterias {
+    flex-direction: column;
+  }
+}
+.bacterias.uno p {
+  flex-basis: 60%;
+  text-align: right;
+}
+.bacterias.dos div {
+  text-align: left;
+  flex-basis: 40%;
+} 
+@media only screen and (max-width: 780px){
+  .bacterias.uno p, .bacterias.dos div{
+    text-align: center;
+  }
+}
 /* Productos */
 .productos {
   display: flex;
@@ -708,7 +744,10 @@ button {
 .entrada-blog .texto-entrada p:nth-child(2) {
   margin-bottom: .4rem;
 }
-.texto-entrada span ,.texto-entrada span2{
+span2 {
+  color: var(--terciarioLetras);
+}
+.texto-entrada span{
   color: var(--terciarioLetras);
 }
 @media only screen and (max-width: 768px){
