@@ -121,6 +121,9 @@ button {
   border: 3px dashed var(--terciario);
   border-radius: 15px;
 }
+.centrar-texto {
+  text-align: center;
+}
 /* Boton Hamburguesa */
 .hamburguesa #menu_on {
   display: none;
@@ -343,7 +346,6 @@ button {
 .informacion-yogurt {
   font-size: 1.2rem;
   color: var(--secundarioLetras);
-  text-align: center;
 }
 .contenedor.info-yogurt {
   padding: 0 50px;
@@ -370,10 +372,22 @@ button {
   text-align: left;
   flex-basis: 40%;
 } 
+@media only screen and (max-width: 910px){
+  .bacterias.dos img {
+    width: 400px;
+  }
+}
 @media only screen and (max-width: 780px){
-  .bacterias.uno p, .bacterias.dos div{
+  .bacterias.uno p, .bacterias.dos div, .contenedor.info-yogurt p{
     text-align: center;
   }
+  .bacterias.dos img {
+    width: 340px;
+  }
+}
+.lista-beneficio li {
+  text-align: left;
+  list-style: circle;
 }
 /* Productos */
 .productos {
